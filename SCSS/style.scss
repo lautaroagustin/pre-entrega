@@ -1,0 +1,219 @@
+@import "_header.scss";
+@import "_footer.scss";
+@import "_variables.scss";
+
+
+*{ 
+    margin:0;
+    padding: 0;  
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    }
+
+body{
+
+background-color: $grisfondo;
+
+
+}
+.grid_main{
+    grid-area: main;
+}
+
+
+.titulo_menu{
+        font-family: 'Kaushan Script', cursive;
+        text-decoration: none;
+    }
+
+.menu{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    nav{
+        text-decoration: line-through;
+        position: relative ; 
+        text-align: center;
+        justify-content: center;
+        ul li{
+            a{
+                text-decoration: none;
+                color: $rojoletras; 
+                cursor: pointer; 
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    
+                }
+            } 
+            
+        }
+    }
+}
+
+.tarjeta_envios{
+display: flex;
+}
+.tarjeta{
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 0);
+    padding: 5%; 
+    margin: 2%;
+    box-shadow: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 5%;
+    width: 40%;
+    p{
+        color: $rojoletras;
+        font-size: 2.5rem;
+    }
+    h1{
+        font-size: 2.1rem;
+        text-decoration: underline;
+    }
+} 
+
+#numero{
+    text-align: right;
+    padding: 1rem;
+}
+
+
+.section1 {
+background-color: rgba(255, 116, 2, 0.842);
+background-size: cover;
+display: flex ;
+justify-content:space-around;
+font-size: 1.5rem;
+text-align: center;
+align-items: center;
+padding: 2%;
+margin-bottom: 3% ;
+}
+
+.burger{
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 1.5rem; 
+    padding: 1%;
+    width: 100%;
+}
+
+#div {
+color: rgb(0, 0, 0);
+background-color: rgba(255, 116, 2, 0.842);
+background-size: cover;
+font-size: 1.5rem;
+padding-top: 2%; padding-bottom: 0%;
+margin-top: 2%;
+text-align: center;
+}
+
+.titulo_naranja{
+    font-family: 'Merienda', cursive;
+    margin: 0.0%;
+}
+
+.section1{
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.divIcon{
+    display: flex;
+    align-self: flex-start;
+}
+
+
+.nosotros{
+    display:flex;
+    justify-content:space-between;
+    padding: 2%;
+    margin: 1%;
+}
+
+.colorParrafo{
+    font-size: x-large;
+    text-align: left;
+    font-family: 'Orelega One', cursive;
+    color: white;
+}
+
+.colormenu{
+    font-size: 160%;
+    text-align: left;
+    font-family: 'Orelega One', cursive;
+    color: white;
+}
+
+.colorcrazyburger{
+    font-size: 140%;
+    text-align: left;
+    font-family: 'Orelega One', cursive;
+    color: white;
+}
+
+
+
+
+.nosotres_equipo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+
+}
+
+.nuestroequi{
+    padding: 1.8%;
+    text-align: justify;
+    margin: 1%;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    animation: para_arriba 2s;
+    img{
+        border-radius: 120%;
+    }
+    
+}
+.tituloNosotros{
+    text-align: center;
+    padding: 3.9%;
+    font-family: 'Merienda', cursive;
+    color: rgb(233, 229, 0);
+}
+
+
+.ubicaciones{
+    justify-content: space-between;
+    background-color: #555555f8;
+    border: solid rgb(255, 0, 0);
+    padding: 10%;
+    animation: blur 1s;
+    
+}
+
+.textoUb {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    padding: 3%;
+    font-size: 3rem;
+}
+
+
+
+
+
