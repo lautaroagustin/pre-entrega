@@ -1,0 +1,23 @@
+
+
+@mixin grid ($G,$columna,$r0w,) {
+    display:$G; 
+    grid-template-columns:$columna;
+    grid-template-rows:$r0w;
+
+}
+
+@mixin flexbox($f, $direction,$J,$A) {
+    display:$f,
+    flex-direction:$direction,
+    justify-content:$J,
+    align-items:$A,
+}
+
+
+
+
+
+
+
+
