@@ -12,9 +12,9 @@
 
 
 .grid{
-    @include grid (grid,1fr,auto auto auto,)
+    @include grid (grid,1fr,auto auto auto,);
     
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "main"
     "footer";

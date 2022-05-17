@@ -8,10 +8,10 @@
 }
 
 @mixin flexbox($f, $direction,$J,$A) {
-    display:$f,
-    flex-direction:$direction,
-    justify-content:$J,
-    align-items:$A,
+    display:$f;
+    flex-direction:$direction;
+    justify-content:$J;
+    align-items:$A;
 }
 
 
