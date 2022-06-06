@@ -167,13 +167,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 1.5rem;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
   padding: 2%;
   margin-bottom: 3%;
 }
@@ -217,9 +221,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   padding: 2%;
   margin: 1%;
 }
@@ -249,16 +260,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   width: 100%;
 }
 
 .nuestroequi {
-  padding: 1.8%;
-  text-align: justify;
-  margin: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,9 +281,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.8%;
+  text-align: justify;
+  margin: 1%;
   -webkit-animation: para_arriba 2s;
           animation: para_arriba 2s;
 }
@@ -289,7 +310,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #555555f8;
-  border: solid red;
   padding: 10%;
   -webkit-animation: blur 1s;
           animation: blur 1s;
@@ -299,16 +319,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 3%;
   font-size: 3rem;
 }
@@ -317,9 +337,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   background-color: #555555f8;
   border: solid red;
   padding: 6rem 0rem;
@@ -335,6 +362,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   text-align: center;
   margin-top: 4%;
   color: black;
@@ -404,7 +437,6 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #555555f8;
-  border: solid red;
   padding: 10%;
 }
 
@@ -440,12 +472,33 @@ textarea {
 }
 
 .menu_burger div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #454545;
   text-align: center;
 }
 
+.menu_burger div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 3px 3px #0000003b;
+          box-shadow: 3px 3px 3px 3px #0000003b;
+}
+
 .menu_burger p {
-  padding: 3rem 1rem;
+  padding: 1rem;
   color: #ffffff;
 }
 
@@ -679,6 +732,9 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     text-align: justify;
     padding: 2%;
     margin: 1%;
@@ -710,6 +766,9 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     margin-bottom: 6rem;
   }
   .textoUb, .titulo_formulario {

@@ -34,6 +34,7 @@ background-color: $grisfondo;
 .titulo_menu{
         font-family: 'Kaushan Script', cursive;
         text-decoration: none;
+        
     }
 
 .menu{
@@ -69,8 +70,8 @@ display: flex;
     background-color: map-get($tarjetas, colorfondo );
     color: rgb(253, 253, 0);
     padding: map-get($tarjetas , pading ); 
-    margin: map-get($tarjetas , margen );
-    box-shadow: map-get($tarjeta , caja );
+    margin: map-get($tarjetas, margen );
+    box-shadow: map-get($tarjetas , caja );
     text-align: center;
     border-radius: map-get($tarjetas , borde);
     width: map-get($tarjetas , W );
@@ -154,6 +155,7 @@ text-align: center;
     color: white;
 }
 
+
 .colorcrazyburger{
     font-size: 140%;
     text-align: left;
@@ -193,7 +195,7 @@ text-align: center;
 .ubicaciones{
     justify-content: space-between;
     background-color: #555555f8;
-    border: solid rgb(255, 0, 0);
+    
     padding: 10%;
     animation: blur 1s;
     
@@ -255,9 +257,9 @@ text-align: center;
     padding: 0rem;
     padding-top: 0%;
     font-size: 2rem;
-  }
-  
-  label{
+}
+
+label{
     font-size: small ;
     padding: 1rem;
     position: relative;
@@ -303,11 +305,9 @@ textarea{
 
 
 
-
 .galeriaMenu{
     justify-content: space-between;
     background-color: #555555f8;
-    border: solid rgb(255, 0, 0);
     padding: 10%
 }
 
@@ -339,12 +339,18 @@ transform:scale(1.1)
 
 
 .menu_burger div{
+    @include flexbox(flex, column ,space-between,center);
     background-color: rgb(69, 69, 69);
     text-align: center;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 3px 3px 3px 3px #0000003b;
+    }
 }
 
 .menu_burger p{
-    padding: 3rem 1rem;
+    padding: 1rem;
     color: #ffffff;
 }
 
@@ -524,7 +530,6 @@ padding: 1rem;
         
         .ubicaciones{
             height: 55vh;
-
             padding-bottom: 8rem;
             
         }
